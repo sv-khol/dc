@@ -3,6 +3,10 @@
     font-size: 12px;
 }
 
+h1 {
+    hyphens: manual;
+}
+
 .role {
     font-weight: 500;
 }
@@ -118,6 +122,9 @@ img {
 
     h1 {
         padding-top: 30px;
-        ;
+    }
+
+    .no-small {
+        display: none;
     }
 }
