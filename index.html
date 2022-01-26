@@ -1,57 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>digital card</title>
-    <style>
-        img {
-            width: 120px;
-        }
-
-        a {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .cont {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/de5d8c0be0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <h1>Холодняк Светлана Игоревна</h1>
-    <p>преподаватель</p>
-    <h2>компьютерная графика, живопись, рисунок, композиция, графический дизайн, веб-дизайн, веб-разработка</h2>
-    <div class="cont">
-        <a class="" target="_self" href="vcf/vcard-sx.vcf" download><img src="img/vcard.png">Контакты</a>
+    <div class="wrap">
+        <div class="top">
+            <h1>Холодняк <wbr>Светлана Игоревна</h1>
+                <p class="role"><i class="fas fa-user-tag"></i> преподаватель</p>
+                <h2 class="works">компьютерная графика, графический дизайн,
+                    веб-дизайн
+                </h2>
+                <h2 class="works">живопись, графика, рисунок, композиция</h2>
+                <h2 class="works">фотография</h2>
+                <h2 class="works">веб-разработка</h2>
 
-        <a class="" target="_blank" href="tel:+79118481450">
-            <img class="" src="img/call.png" style="pointer-events: none;">Позвонить</a>
+        </div>
+        <a class="save-mob" target="_self" href="vcf/vcard-sx.vcf" download><i class="far fa-address-card"></i>Сохранить
+            в контакты <i class="fas fa-download"></i></a>
+        <div class="row">
+            <div class="left">
+                <img src="img/29.jpg" alt="" class="port">
+                <a class="" target="_blank" href="tel:+79118481450">
+                    <i class="fas fa-phone"></i>Позвонить</a>
+                <a class="" target="_blank" href="sms:+79118481450">
+                    <i class="fas fa-sms"></i>sms</a>
+                <a class="" target="_blank" href="mailto:mar_722@mail.ru">
+                    <i class="far fa-envelope"></i>Email</a>
 
-        <a class="" target="_blank" data-source="/limsll/sms" href="sms:+79118481450">
-            <img class="" src="img/sms.png">Сообщение</a>
+            </div>
+            <div class="right">
+                <a class="item" target="_self" href="vcf/vcard-sx.vcf" download><i
+                        class="far fa-address-card"></i>Сохранить
+                    в контакты <i class="fas fa-download"></i></a>
 
-        <a class="" target="_blank" href="mailto:mar_722@mail.ru">
-            <img src="img/email.png">Email</a>
+                <div class="item messengers">
+                    <p>Мессенеджеры:</p>
+                    <div class="items">
+                        <a class="item-vert" target="_blank" href="https://wa.me/+79770026540">
+                            <i class="fab fa-whatsapp"></i>WhatsApp</a>
 
-        <a class="" target="_blank" data-source="/limsll/whatsapp" href="https://wa.me/+79770026540">
-            <img src="img/whatsapp.png">WhatsApp</a>
+                        <a class="item-vert" href="viber://add?number=79770026540" target="_blank"><i
+                                class="fab fa-viber"></i>Viber</a>
+                        <a class="item-vert" target="_blank" href="http://t.me/xs"><i
+                                class="fab fa-telegram"></i>Telegram</a>
+                        <a class="item-vert" target="_blank" href="skype:xsxs?chat"><i
+                                class="fab fa-skype"></i>Skype</a>
+                    </div>
 
-        <a class="" target="_blank" href="http://t.me/xs"><img src="img/telegram.png">Telegram</a>
-        <a class="" target="_blank" href="skype:xsxs?chat"><img src="img/skype.png">Skype</a>
-        <a class="" target="_blank" href="https://www.youtube.com/channel/UCrBFsoNUGxcoDTW1F287vaA"><img
-                src="img/youtube.png">Youtube</a>
-        <a class="" target="_blank" href="https://www.instagram.com/svetkhol/"><img
-                src="img/instagram.png">Instagram</a>
-        <a class="" target="_blank" href="https://vk.com/s.kholodnyak"><img src="img/vk.png">VK</a>
+                </div>
+
+                <div class="item socials">
+                    <p>Соцсети::</p>
+                    <div class="items">
+                        <a class="" target="_blank" href="https://vk.com/s.kholodnyak"><i class="fab fa-vk"></i></a>
+                        <a class="" target="_blank" href="https://www.youtube.com/channel/UCrBFsoNUGxcoDTW1F287vaA">
+                            <i class="fab fa-youtube"></i></a>
+                        <a class="" target="_blank" href="https://www.instagram.com/svetkhol/">
+                            <i class="fab fa-instagram"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="item sites">
+                    <p>Сайты:</p>
+                    <div class="items-vert">
+                        <a href="https://nat-geo.ru/community/user/223507/">National Geographic</a>
+                        <a href="https://35photo.pro/xs1510">35photo</a>
+                        <a href="https://www.deviantart.com/xsorange/gallery">Deviantart</a>
+                        <a href="https://artchive.ru/artists/74872~Svetlana_Kholodnjak/works">Artchive</a>
+                        <a href="https://www.flickr.com/photos/xs_15/albums">Flickr</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gallery">
+            <h2>Примеры работ:</h2>
+            <div class="row2">
+                <button id="prev" type="button"><i class="fas fa-angle-left"></i></button>
+                <div class="photos">
+                    <div class="proportion">
+                        <img src="img/1.jpg" alt="" text="Живописная работа" class="im shown">
+                        <img src="img/2.jpg" text="Пример обработки фото" class="im">
+                        <img src="img/3.jpg" text="Пример колллажа" class="im">
+                        <img src="img/4.jpg" text="Композиция для плаката" class="im">
+                        <img src="img/5.jpg" text="Макет сайта" class="im">
+                        <div class="number">1/1</div>
+                        <div class="txt">Живописная работа</div>
+                    </div>
+                </div>
+                <button class="next" type="button"><i class="fas fa-angle-right"></i></button>
+            </div>
+            <div class="dots"></div>
+        </div>
+
     </div>
+    <script src="js/script_1-class.js"></script>
 </body>
 
 </html>
