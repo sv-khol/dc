@@ -9,10 +9,10 @@ body {
 #gallery {
 	padding: 30px 5%;
 	margin: 30px 0;
-	background-color: var(--col-l-grey);
-	;
+	background-color: var(--col-warm-grey);
+
 	box-shadow: 5px 5px 5px var(--col-sh-grey);
-	;
+
 	color: var(--col-d-grey);
 	text-align: center;
 }
@@ -20,7 +20,7 @@ body {
 #gallery h2 {
 	font-size: 14px;
 	margin: 0;
-
+	color: var(--col-cold-grey);
 }
 
 .row2 {
@@ -71,7 +71,7 @@ body {
 }
 
 .dot {
-	background: var(--col-d-grey);
+	background: var(--col-cold-grey);
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;

@@ -1,7 +1,11 @@
 :root {
-    --col-d-grey: #333232;
+    --col-d-grey: #636363;
     --col-l-grey: #ededed;
-    --col-bg-grey: #E5E5E5;
+    --col-bg-grey: #fffefe;
     --col-sh-grey: #8d8d8d;
-    --col-hover: #eb6010;
+    --col-hover: #F88430;
+    --col-warm-grey: #F5F1ED;
+    --col-cold-grey: #7E8598;
+
+    --gap: 10px;
 }

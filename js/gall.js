@@ -1,6 +1,6 @@
 window.onload = function () {
 	var btn_prev = document.getElementById('prev');
-	var btn_next = document.querySelector('.next');
+	var btn_next = document.getElementById('next');
 	var numb = document.querySelector('.number');
 	var text = document.querySelector('.txt');
 
