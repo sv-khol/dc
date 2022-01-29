@@ -1,3 +1,20 @@
+.pages {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    color: var(--col-cold-grey);
+
+}
+
+.active {
+    color: var(--col-hover);
+    text-decoration: none;
+}
+
+.nonactive {
+    text-decoration: underline;
+}
+
 .works {
     font-weight: 400;
     font-size: 12px;
@@ -190,8 +207,12 @@ img {
         color: var(--col-d-grey);
     }
 
+    .pages {
+        padding-top: 55px;
+    }
+
     h1 {
-        padding-top: 35px;
+
         font-size: 22px;
     }
 
