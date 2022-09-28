@@ -1,18 +1,38 @@
 .pages {
     display: flex;
     justify-content: flex-end;
-    gap: 30px;
+    gap: 5px;
     color: var(--col-cold-grey);
+    background-color: var(--col-cold-grey);
+    /* margin: 0 -20px; */
+}
 
+.pages a {
+    font-size: 12px;
+    padding: 8px 25px 20px;
+    /* border: 1px solid var(--col-cold-grey); */
+    border-radius: 20px;
+    margin-bottom: -20px;
+    position: relative;
+    background-color: var(--col-bg-grey);
 }
 
 .active {
-    color: var(--col-hover);
-    text-decoration: none;
+    /* color: var(--col-hover);
+    text-decoration: none; */
+
 }
 
 .nonactive {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    opacity: 0.5;
+    color: var(--col-cold-grey);
+    z-index: 0;
+}
+
+.fio {
+    color: var(--col-hover);
+    font-weight: normal;
 }
 
 .works {
@@ -109,6 +129,7 @@ img {
     flex-grow: 1;
 
     background: var(--col-cold-grey);
+    padding: 20px 0;
 
     display: flex;
     flex-direction: column;
@@ -123,7 +144,8 @@ img {
 
 .item .mes {
     font-size: 10px;
-    width: 80px;
+    min-width: 80px;
+    max-width: 80px;
     /* border-right: 1px solid var(--col-warm-grey); */
     display: flex;
     flex-direction: column;
@@ -139,9 +161,9 @@ img {
     flex-direction: row;
     align-items: stretch;
     gap: 10px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid black;
-    padding: 30px;
+    /* border-top: 1px solid white;
+    border-bottom: 1px solid black; */
+    padding: 0 30px;
 }
 
 .items {
@@ -151,7 +173,11 @@ img {
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 10px 0;
+    padding: 5px 0;
+}
+
+.items p {
+    margin: 0;
 }
 
 .items i {
@@ -188,14 +214,28 @@ img {
     left: 0;
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
     background-color: var(--col-hover);
     color: white;
     padding: 10px 30px;
     box-sizing: border-box;
     display: none;
     font-size: 12px;
+}
+
+.save-mob p {
+    margin: 0;
+}
+
+.far,
+.fas {
+    font-size: 16px;
+}
+
+.space {
+    padding-bottom: 15px;
 }
 
 @media screen and (max-width: 700px) {
