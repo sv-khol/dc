@@ -4,7 +4,7 @@
     gap: 5px;
     color: var(--col-cold-grey);
     background-color: var(--col-cold-grey);
-    /* margin: 0 -20px; */
+    padding-top: 45px;
 }
 
 .pages a {
@@ -221,12 +221,16 @@ img {
     color: white;
     padding: 10px 30px;
     box-sizing: border-box;
-    display: none;
+    display: flex;
     font-size: 12px;
 }
 
 .save-mob p {
     margin: 0;
+}
+
+.save-mob:hover {
+    color: var(--col-d-grey);
 }
 
 .far,
@@ -239,18 +243,6 @@ img {
 }
 
 @media screen and (max-width: 700px) {
-    .save-mob {
-        display: flex;
-    }
-
-    .save-mob:hover {
-        color: var(--col-d-grey);
-    }
-
-    .pages {
-        padding-top: 55px;
-    }
-
     h1 {
 
         font-size: 22px;
