@@ -13,13 +13,13 @@ taskElements.forEach(function (item, index) {
     item.draggable = true;
 })
 
-tasksList.addEventListener(`dragstart`, (event) => {
+tasksList.addEventListener(`touchstart`, (event) => {
     event.target.classList.add(`selected`);
     startX = event.clientX
     console.log('start: ', startX);
 });
 
-tasksList.addEventListener(`dragend`, (event) => {
+tasksList.addEventListener(`touchend`, (event) => {
     event.target.classList.remove(`selected`);
     moveX = event.clientX - startX;
     console.log('end: ', event.clientX, '   move: ', moveX,
