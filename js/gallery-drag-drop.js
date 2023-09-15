@@ -7,7 +7,8 @@ let pos = document.querySelector('.pos')
 let mpos = document.querySelector('.mouse')
 let data_start = document.querySelector('.data_start')
 
-visible.onmousedown = function (event) {
+visible.addEventListener(`touchstart`, (event) => {
+
     event = event || window.event;
     let list_start = parseInt(list.style.left)
     let mouse_start = event.clientX;
@@ -46,28 +47,27 @@ visible.onmousedown = function (event) {
         moveAt(event.clientX, list_start, mouse_start);
     }
 
-    visible.addEventListener('mousemove', onMouseMove);
+    visible.addEventListener('touchmove', onMouseMove);
 
-    visible.onmouseup = function () {
-        visible.removeEventListener('mousemove', onMouseMove);
-        visible.onmouseup = null;
-    };
+    visible.addEventListener(`touchend`, (event) => {
+        visible.removeEventListener('touchmove', onMouseMove);
+        // visible.onmouseup = null;
+    });
 
-}
-
-visible.onmousemove = function (event) {
+})
+visible.addEventListener(`touchmove`, (event) => {
     event = event || window.event;
     mpos.innerHTML = event.clientX;
-}
+});
 
-visible.ondragstart = function () {
-    return false;
-};
+// visible.ondragstart = function () {
+//     return false;
+// };
 
 
-pos.onclick = function () {
+// pos.onclick = function () {
 
-}
+// }
 // visible.onclick = function (event) {
 //     console.log("Размер элемента:" + this.offsetWidth + "x" + this.offsetHeight);
 //     console.log("положение элемента:" + this.offsetLeft + "x" + this.offsetTop);
