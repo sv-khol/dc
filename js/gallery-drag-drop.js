@@ -45,20 +45,17 @@ visible.addEventListener(`touchstart`, (event) => {
     function onMouseMove(event) {
         event = event || window.event;
         moveAt(event.clientX, list_start, mouse_start);
+        mpos.innerHTML = event.clientX;
     }
 
     visible.addEventListener('touchmove', onMouseMove);
 
     visible.addEventListener(`touchend`, (event) => {
         visible.removeEventListener('touchmove', onMouseMove);
-        // visible.onmouseup = null;
+        visible.ontouchend = null;
     });
 
 })
-visible.addEventListener(`touchmove`, (event) => {
-    event = event || window.event;
-    mpos.innerHTML = event.clientX;
-});
 
 // visible.ondragstart = function () {
 //     return false;
