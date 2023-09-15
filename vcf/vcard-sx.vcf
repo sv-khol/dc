@@ -1,6 +1,6 @@
 BEGIN:VCARD
 VERSION:3.0
-REV: 2022-01-01T12:48:15
+REV: 2023-09-09T12:48:15
 N;CHARSET=UTF-8:Холодняк;Светлана;Игоревна;;
 FN;CHARSET=UTF-8:Светлана Игоревна Холодняк
 ORG;CHARSET=UTF-8:ArtFuture
@@ -9,6 +9,7 @@ NOTE;CHARSET=UTF-8: компьютерная графика\, графическ
 EMAIL;CHARSET=UTF-8;type=INTERNET:svetlana.kholodnyak@gmail.com
 
 URL:https://vk.com/s.kholodnyak
+URL;TYPE=WORK:https://www.deviantart.com/xsorange/gallery
 URL;TYPE=WORK:https://artchive.ru/artists/74872~Svetlana_Kholodnjak/works
 URL;TYPE=WORK:https://www.flickr.com/photos/xs_15/albums
 URL;TYPE=WORK:https://35photo.pro/xs1510
