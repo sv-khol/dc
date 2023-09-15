@@ -61,70 +61,70 @@ body {
 }
 
 /*==-------------==draggable==---------===*/
-.frame {
-	overflow: hidden;
+.slider * {
+	box-sizing: border-box;
 }
 
-.tasks__list {
-	display: flex;
-	gap: 30px;
+.slider {
 	position: relative;
-	left: 0;
-	top: 0;
+	width: 200px;
+	height: 200px;
+	margin: 50px auto 0;
+	user-select: none;
+	touch-action: pan-y;
 }
 
-.tasks__item {
-	min-width: 300px;
-	height: 300px;
-	background-color: #40b162;
+.slider img {
+	poiner-events: none;
 }
 
-.selected {
-	opacity: 0.6;
-}
-
-/*==-------------==draggable==---------===*/
-.drag__visible {
+.slider-list {
+	width: 200px;
+	height: 200px;
 	overflow: hidden;
+}
+
+.slider-list.grab {
+	cursor: grab;
+}
+
+.slider-list.grabbing {
+	cursor: grabbing;
+}
+
+.slider-track {
+	display: flex;
+}
+
+.slide {
+	width: 200px;
+	height: 200px;
+	flex-shrink: 0;
+	font-size: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #000;
+}
+
+.slider-arrows {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.next,
+.prev {
+	background: none;
+	border: none;
+	margin: 0 10px;
+	font-size: 30px;
 	cursor: pointer;
 }
 
-.drag__flex {
-	display: flex;
-	gap: 30px;
-	position: relative;
-	left: 0;
-	top: 0;
-	z-index: 1;
-
-}
-
-.drag__item {
-	min-width: 25vw;
-	height: 25vw;
-	background-color: rgb(56, 54, 212);
-	border-radius: 5vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 40px;
-	color: white;
-}
-
-.progress {
-	height: 3px;
-	background-color: rgb(99, 99, 99);
-	position: relative;
-	margin: 30px 0;
-}
-
-.pos {
-	height: 3px;
-	width: 23vw;
-	background-color: rgb(61, 42, 230);
-	position: absolute;
-	top: 0;
-	left: 0;
+.next.disabled,
+.prev.disabled {
+	opacity: .25;
+	pointer-events: none;
 }
 
 /*======================drag-2=====================*/
