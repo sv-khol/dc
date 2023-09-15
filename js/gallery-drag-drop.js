@@ -6,7 +6,7 @@ let num_items = items.length
 let pos = document.querySelector('.pos')
 let mpos = document.querySelector('.mouse')
 let data_start = document.querySelector('.data_start')
-
+mpos.innerHTML = 'qqqqqqq';
 visible.addEventListener(`touchstart`, (event) => {
 
     event = event || window.event;
