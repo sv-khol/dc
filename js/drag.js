@@ -163,6 +163,8 @@ let slider = document.querySelector('.slider'),
         allowSwipe = true;
     };
 
+prev.classList.toggle('disabled', slideIndex === 0);
+
 sliderTrack.style.transform = 'translate3d(0px, 0px, 0px)';
 sliderList.classList.add('grab');
 
@@ -170,16 +172,33 @@ sliderTrack.addEventListener('transitionend', () => allowSwipe = true);
 slider.addEventListener('touchstart', swipeStart);
 slider.addEventListener('mousedown', swipeStart);
 
-arrows.addEventListener('click', function () {
+next.addEventListener('click', function () {
     let target = event.target;
-
-    if (target.classList.contains('next')) {
-        slideIndex++;
-    } else if (target.classList.contains('prev')) {
-        slideIndex--;
-    } else {
-        return;
-    }
-
+    slideIndex++;
+    console.log(next);
     slide();
 });
+
+prev.addEventListener('click', function () {
+    let target = event.target;
+    slideIndex--;
+    console.log(prev);
+    slide();
+});
+
+// arrows.addEventListener('click', function () {
+//     let target = event.target;
+
+//     if (target.classList.contains('next')) {
+//         slideIndex++;
+//         console.log(next);
+//     } else if (target.classList.contains('prev')) {
+//         slideIndex--;
+//         console.log(prev);
+//     } else {
+//         return;
+//     }
+
+//     slide();
+// });
+// https://habr.com/ru/articles/501258/

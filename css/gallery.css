@@ -23,41 +23,27 @@ body {
 	color: var(--col-cold-grey);
 }
 
-.photos {
-	width: 100%;
-	margin: 0 auto;
-	position: relative;
-	color: white;
-}
-
-.proportion {
-	padding-top: 75%;
-}
-
 .im {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
-	position: absolute;
-	left: 0;
-	top: 0;
-	opacity: 0;
-	transition: opacity 1s;
-}
-
-.txt {
-	color: #dfdad5;
-	text-align: left;
-}
-
-.shown {
-	opacity: 1;
+	pointer-events: none
 }
 
 .number {
 	color: #dfdad5;
 	font-size: 20px;
 	text-align: left;
+}
+
+.part {
+	background-color: var(--col-hover);
+	color: var(--col-warm-grey);
+}
+
+button {
+	text-align: center;
+	border: none;
 }
 
 /*==-------------==draggable==---------===*/
@@ -67,9 +53,9 @@ body {
 
 .slider {
 	position: relative;
-	width: 200px;
-	height: 200px;
-	margin: 50px auto 0;
+	width: 100%;
+	/* height: 300px; */
+	margin: 4px auto 0;
 	user-select: none;
 	touch-action: pan-y;
 }
@@ -79,8 +65,8 @@ body {
 }
 
 .slider-list {
-	width: 200px;
-	height: 200px;
+	width: 100%;
+	height: 300px;
 	overflow: hidden;
 }
 
@@ -97,19 +83,21 @@ body {
 }
 
 .slide {
-	width: 200px;
-	height: 200px;
+	width: 400px;
+	height: 300px;
 	flex-shrink: 0;
 	font-size: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid #000;
+	/* border: 1px solid #000; */
 }
 
 .slider-arrows {
 	margin-top: 15px;
 	text-align: center;
+	display: flex;
+	justify-content: space-around;
 }
 
 .next,
